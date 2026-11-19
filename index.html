@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tarix Testlari – 11-sinf | O‘zbekiston va Jahon tarixi</title>
+  
+  <!-- Meta tags for social and SEO -->
+  <meta name="description" content="11-sinf O‘zbekiston tarixi va Jahon tarixi darsliklari (2025) asosida tuzilgan interaktiv MCQ test platformasi.">
+  <meta name="theme-color" content="#161513">
+  
+  <!-- Favicon using ancient scroll emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📜</text></svg>">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-wrapper" onclick="renderHome()">
+        <span class="brand-icon">📜</span>
+        <span class="brand-text">Tarix testlari</span>
+        <span class="badge-grade">11-sinf</span>
+      </div>
+
+      <div class="header-actions">
+        <!-- Sound Toggle -->
+        <button class="hdr-btn" id="audioToggleBtn" onclick="sounds.toggle(); updateHeaderBadges();" title="Ovozni yoqish / o'chirish">
+          🔊 <span>Ovoz</span>
+        </button>
+
+        <!-- Stats Button -->
+        <button class="hdr-btn" onclick="openStatsModal()" title="Mening natijalarim">
+          📊 <span>Natijalar</span>
+        </button>
+
+        <!-- Mistakes Bank -->
+        <button class="hdr-btn" onclick="renderMistakes()" title="Xatolarim banki">
+          <span>⚠️</span>
+          <span>Xatolarim</span>
+          <span class="count-badge" id="mistakesBadge" style="display: none;">0</span>
+        </button>
+
+        <!-- Night / Light Mode Toggle -->
+        <button class="hdr-btn theme-toggle-btn" onclick="toggleTheme()" title="Kechki / Kunduzgi rejim">
+          <span class="theme-icon-container" id="themeIcon">🌙</span>
+          <span id="themeLabel">Yorug'</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Application Content Container -->
+  <main class="main-content" id="appMain">
+    <!-- Populated dynamically via app.js -->
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <p>Savollar 11-sinf "O‘zbekiston tarixi" va "Jahon tarixi" darsliklari (2025-yilgi yangi nashr) asosida tuzilgan.</p>
+    <p style="margin-top: 4px; font-size: 0.75rem; color: var(--muted);">Barcha natijalar va test statistikasi foydalanuvchining shaxsiy brauzerida xavfsiz saqlanadi.</p>
+  </footer>
+
+  <!-- Scripts: Data and Application Logic -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
