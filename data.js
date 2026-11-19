@@ -3,7 +3,7 @@ const HISTORY_DATA = {
     "id": "uzbekiston",
     "name": "O‘zbekiston tarixi",
     "shortName": "O‘zbekiston tarixi",
-    "icon": "🇺🇿",
+    "icon": "<img src=\"uzb-flag.png\" class=\"uz-flag-banner\" alt=\"O‘zbekiston\">",
     "topics": [
       {
         "id": "uz_01",

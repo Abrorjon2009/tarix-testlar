@@ -313,7 +313,7 @@ function renderHome() {
     <!-- Tabs: O'zbekiston / Jahon -->
     <div class="section-tabs">
       <button class="tab-btn ${AppState.activeSection === 'uzbekiston' ? 'active' : ''}" onclick="switchSection('uzbekiston')">
-        <span class="tab-icon">🇺🇿</span>
+        <span class="tab-icon"><img src="uzb-flag.png" class="uz-flag" alt="O‘zbekiston"></span>
         <span>O‘zbekiston tarixi</span>
       </button>
       <button class="tab-btn ${AppState.activeSection === 'jahon' ? 'active' : ''}" onclick="switchSection('jahon')">
@@ -493,7 +493,7 @@ function openAralashModal() {
     <div class="mode-cards-grid">
       <!-- Section Mixed -->
       <div class="mode-card">
-        <div class="mode-card-icon">${sec.icon}</div>
+        <div class="mode-card-icon">${sec.id === 'uzbekiston' ? '<img src="uzb-flag.png" class="uz-flag-lg" alt="O‘zbekiston">' : sec.icon}</div>
         <h3>${sec.name} bo'yicha</h3>
         <p>Ushbu bo'limdagi barcha ${sec.topics.length} ta mavzudan aralashtirilgan savollar (${secTotal} ta savol zaxirasi).</p>
         <div class="count-selector-group">
@@ -1173,7 +1173,7 @@ function openStatsModal() {
 
       <div style="background: var(--card-alt); padding: 14px 18px; border-radius: var(--radius-md); font-size: 0.88rem; margin-bottom: 20px; line-height: 1.6;">
         <div>📚 <strong>Jami savollar bazasi:</strong> 190 ta (11-sinf darsligi)</div>
-        <div>🇺🇿 <strong>O‘zbekiston tarixi:</strong> 9 ta mavzu (90 savol)</div>
+        <div><img src="uzb-flag.png" class="uz-flag" alt="O‘zbekiston"> <strong>O‘zbekiston tarixi:</strong> 9 ta mavzu (90 savol)</div>
         <div>🌍 <strong>Jahon tarixi:</strong> 10 ta mavzu (100 savol)</div>
         <div>💾 <strong>Xotira:</strong> Barcha ma'lumotlar qurilmangiz brauzerida saqlanmoqda.</div>
       </div>

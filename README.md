@@ -58,11 +58,12 @@
 Ushbu loyiha 100% statik fayllardan (HTML, CSS, JS) iborat bo‘lgani uchun uni GitHub Pages orqali 1 daqiqada butun dunyoga bepul e'lon qilishingiz mumkin:
 
 1. **GitHub**da yangi ochiq (Public) repozitoriy oching (masalan, `tarix-testlari`).
-2. Loyiha papkasidagi 4 ta faylni ushbu repozitoriyga yuklang:
+2. Loyiha papkasidagi 5 ta faylni ushbu repozitoriyga yuklang:
    - `index.html`
    - `style.css`
    - `data.js`
    - `app.js`
+   - `uzb-flag.png`
 3. Repozitoriy sozlamalariga kiring: **Settings** → **Pages** (chap menyuda).
 4. **Branch** bo‘limida `main` (yoki `master`) tarmog‘ini va `/ (root)` papkasini tanlab, **Save** tugmasini bosing.
 5. 1 daqiqa ichida sizga havola beriladi:  
